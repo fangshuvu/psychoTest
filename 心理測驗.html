@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「哪種學習方式最適合你？」找到屬於自己的學習好物✐</title>
+    <!-- Bootstrap CDN引用 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- css 引用 -->
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="stylesheet" href="./quiz-animation.css">
+
+</head>
+
+<body>
+<div>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="JavaScript:window.location.reload()">
+                <img src="./W5_img/stuff/rabbit-icon.png" alt="rabbit-icon" width="60" height="48">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link"  href="#">Home</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link ">Disabled</a> -->
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="progress">
+        <div id="run" class="quiz-progress progress-bar progress-bar-striped progress-bar-animated">
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="row">
+        <div class="col-md-1 coi-sm-0"></div>
+
+        <div class="col-md-10 coi-sm-12">
+            <!-- start -->
+            <div id="start" class="">
+                <img class="start-img mobile-start-img" src="./W5_img/stuff/rabbit.png" alt="開始首圖">
+
+                 <div class="start-text mobile-start-text">
+                    <h2>「 哪種學習方式最適合你 ？」</h2>
+                    <p class="fs-5 text-black-50">\ 快來尋找屬於自己的學習好物吧 ! /</p>
+                    <p>
+                        身為人類，終身都無法脫離學習，學生時期我們學習各種學科，應付升學考試；出社會後我們依舊要在職場上學習本職學能，吸收更多新知的同時，你是否經常遇到「今日學明日忘」的情形呢？不一定老了腦袋就不中用了，也許是這個學習方式不適合現在的你！
+                    </p>
+
+                    <button id="btnStart" class="start-btn">開始測驗 START</button>
+                </div>
+            </div>
+
+            <!-- quiz -->
+            <div id="Q1" class="question mobile-question none">
+                <img class="m-3 quiz-img1 mobile-quiz-img" src="./W5_img/quiz/Q1.png" alt="想去的新地方">
+
+                <h4 class="mb-4 fw-bolder">Q1. 到新地方的時候，你怎麼找到想去的地方？</h4>
+
+                <div id="Answer1">
+                    <input id="A1-1" type="radio" name="A1" value="1">
+                    <label class="mobile-label" for="A1-1">查詢地圖或指南上的資訊</label>
+                    <input id="A1-2" type="radio" name="A1" value="2">
+                    <label class="mobile-label" for="A1-2">出外靠朋友，問問路人吧</label>
+                    <input id="A1-3" type="radio" name="A1" value="3">
+                    <label class="mobile-label" for="A1-3">四處晃晃，船到橋頭自然直</label>
+                </div>
+                
+            </div>
+            
+            <div id="Q2" class="question mobile-question none">
+                <img class="m-3 mobile-quiz-img" src="./W5_img/quiz/Q2.png" alt="閃亮">
+                <img class="quiz-img2 mobile-quiz-img2" src="./W5_img/quiz/Q2-1.png" alt="新東西">
+                
+                <h4 class="mb-4 fw-bolder">Q2.使用新東西（例如手機、電器、遊戲）你習慣如何熟悉它？</h4>
+                
+                <div id="Answer2">
+                    <input id="A2-1" type="radio" name="A2" value="1">
+                    <label class="mobile-label" for="A2-1">閱讀說明書</label>
+                    <input id="A2-2" type="radio" name="A2" value="2">
+                    <label class="mobile-label" for="A2-2">向他人詢問如何操作</label>
+                    <input id="A2-3" type="radio" name="A2" value="3">
+                    <label class="mobile-label" for="A2-3">自己摸索，並在錯誤中學習</label>
+                </div>
+                
+            </div>
+            
+            <div id="Q3" class="question mobile-question none">
+                <img class="m-3 quiz-img1 mobile-quiz-img" src="./W5_img/quiz/Q3.png" alt="結交新朋友">
+                
+                <h4 class="mb-4 fw-bolder">Q3. 關於新認識的朋友，你比較記得他們的什麼？</h4>
+                
+                <div id="Answer3">
+                    <input id="A3-1" type="radio" name="A3" value="1">
+                    <label class="mobile-label" for="A3-1">臉</label>
+                    <input id="A3-2" type="radio" name="A3" value="2">
+                    <label class="mobile-label" for="A3-2">名字</label>
+                    <input id="A3-3" type="radio" name="A3" value="3">
+                    <label class="mobile-label" for="A3-3">對話的內容</label>
+                </div>
+                
+            </div>
+            
+            <div id="Q4" class="question mobile-question none">
+                <img class="m-3 quiz-img3 mobile-quiz-img" src="./W5_img/quiz/Q4.png" alt="記憶電話號碼">
+                
+                <h4 class="mb-4 fw-bolder">Q4. 臨時要記一組電話號碼，你會怎麼做？</h4>
+                
+                <div id="Answer4">
+                    <input id="A4-1" type="radio" name="A4" value="1">
+                    <label class="mobile-label" for="A4-1">假裝撥打，輸入電話鍵盤記憶</label>
+                    <input id="A4-2" type="radio" name="A4" value="2">
+                    <label class="mobile-label" for="A4-2">嘴裡反覆複誦</label>
+                    <input id="A4-3" type="radio" name="A4" value="3">
+                    <label class="mobile-label" for="A4-3">筆記 或 存在手機裡</label>
+                </div>
+                
+            </div>
+            
+            <div id="Q5" class="question mobile-question none">
+                <img class="m-3 quiz-img4 mobile-quiz-img" src="./W5_img/quiz/Q5.png" alt="書的偏好">
+                
+                <h4 class="mb-4 fw-bolder">Q5. 閱讀什麼類型的書會讓你覺得有趣？</h4>
+                
+                <div id="Answer5">
+                    <input id="A5-1" type="radio" name="A5" value="1">
+                    <label class="mobile-label" for="A5-1">大量圖片、表格的書</label>
+                    <input id="A5-2" type="radio" name="A5" value="2">
+                    <label class="mobile-label" for="A5-2">有很多字的書</label>
+                    <input id="A5-3" type="radio" name="A5" value="3">
+                    <label class="mobile-label" for="A5-3">有猜謎遊戲或附加小遊戲的書</label>
+                </div>
+                
+            </div>
+            
+            <!-- result -->
+            <div id="result1" class="result-none">
+                <img class="result-img mobile-result-img" src="./W5_img/stuff/eye.png" alt="結果-視覺">
+                
+                <div class="result-content mobile-result-content">
+                    <div class="mb-3 result-text">
+                        <h3 >視覺學習者</h3>
+                        
+                        <p class="m-3">
+                            你最適合也主要透過視覺來學習，可以想像正在學習的東西，因此你會被豐富的圖像色彩和故事所吸引，想事情的時候可能會閉上眼睛思考。喜歡用文字、圖片、影片、圖表、模型等方式學習，因此你喜歡自己整理筆記，但可能比較難理解口語的指令或教導，並且容易被聲音分散注意力。
+                        </p>
+                    </div>
+                    <!-- style="border: 1px solid red;" -->
+                    <table >
+                        <tr>
+                            <td>
+                                <a href="#facebook">
+                                    <button class="w-100 bg-success rounded-pill share">Facebook ></button>
+                                </a>
+                            </td>
+                            
+                            <!-- 左-輪播圖 -->
+                            <td colspan="2" rowspan="4">
+                                <div id="apple1" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide result-carousel">
+                                    <div class="w-50 carousel-indicators">
+                                        <button type="button" data-bs-target="#apple1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#apple1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#apple1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    
+                                    <div class="carousel-inner" style="width: 85%;">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid" src="./W5_img/stuff/eye-1.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/eye-2.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/eye-3.png">
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#apple1"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#apple1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="#line">
+                            <button class="w-100 bg-success rounded-pill share">Line ></button>
+                        </a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="JavaScript:window.location.reload()">
+                            <button id class="w-100 rounded-pill share">↺ 再測一次</button>
+                        </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#WheretoBuy">
+                                    <button id class="w-100 bg-danger rounded-pill share">逛逛更多好物</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+            <div id="result2" class="result-none">
+                <img class="result-img mobile-result-img" src="./W5_img/stuff/ear.png" alt="結果-聽覺">
+                
+                <div class="result-content mobile-result-content">
+                    <div class="mb-3 result-text">
+                        <h3 >聽覺學習者</h3>
+                        
+                        <p class="m-3">
+                            你可以比較輕鬆地理解語音的指令或說明，透過聲音儲存你接收到的資訊。大部分時候，你不喜歡閱讀，可能要將文字讀出來才能記得資訊，同時也會透過跟別人談話來記憶。聽覺學習者在學習過程中可能因為喃喃自語，跟別人講話，被誤會成不讀書、不專心，但事實上你很有可能就是透過反覆聆聽的過程來記憶你想學習的事情。
+                        </p>
+                    </div>
+                    <!-- style="border: 1px solid red;" -->
+                    <table >
+                        <tr>
+                            <td>
+                                <a href="#facebook">
+                                    <button class="w-100 bg-primary rounded-pill share">Facebook ></button>
+                                </a>
+                            </td>
+                            
+                            <!-- 左-輪播圖 -->
+                            <td colspan="2" rowspan="4">
+                                <div id="apple2" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide result-carousel">
+                                    <div class="w-50 carousel-indicators">
+                                        <button type="button" data-bs-target="#apple2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#apple2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#apple2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    
+                                    <div class="carousel-inner" style="width: 85%;">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid" src="./W5_img/stuff/ear-1.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/ear-2.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/ear-3.png">
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#apple2"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#apple2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <a href="#line">
+                                <button class="w-100 bg-primary rounded-pill share">Line ></button>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="JavaScript:window.location.reload()">
+                                    <button id class="w-100 rounded-pill share">↺ 再測一次</button>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#WheretoBuy">
+                                    <button id class="w-100 bg-danger rounded-pill share">逛逛更多好物</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+            <div id="result3" class="result-none">
+                <img class="result-img mobile-result-img" src="./W5_img/stuff/tounch.png" alt="結果-觸覺">
+                
+                <div class="result-content mobile-result-content">
+                    <div class="mb-3 result-text">
+                        <h3 >觸覺（操作型）學習者</h3>
+                        
+                        <p class="m-3">
+                            你比較喜歡東摸西摸、或實際畫出你要學的事物，學習新東西時，你偏好從實際操作中學習，如果有肢體動作，你會學得更快。你常常會透過碰觸來與人溝通，說話的時候會有很多動作或手勢。通常你有很好的運動或活動力。可以很輕易地記住你做過的事，但要你記得看過或聽過的事情會有些困難。
+                        </p>
+                    </div>
+                    <!-- style="border: 1px solid red;" -->
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="#facebook">
+                                    <button class="w-100 bg-success rounded-pill share">Facebook ></button>
+                                </a>
+                            </td>
+                            
+                            <!-- 左-輪播圖 -->
+                            <td colspan="2" rowspan="4">
+                                <div id="apple3" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide result-carousel">
+                                    <div class="w-50 carousel-indicators">
+                                        <button type="button" data-bs-target="#apple3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#apple3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#apple3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    
+                                    <div class="carousel-inner" style="width: 85%;">
+                                        <div class="carousel-item active">
+                                            <img class="img-fluid" src="./W5_img/stuff/tounch-1.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/tounch-2.png">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="img-fluid" src="./W5_img/stuff/tounch-3.png">
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#apple3"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#apple3"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#line">
+                                    <button class="w-100 bg-success rounded-pill share">Line ></button>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="JavaScript:window.location.reload()">
+                                    <button id class="w-100 rounded-pill share">↺ 再測一次</button>
+                                </a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <a href="#WheretoBuy">
+                                    <button id class="w-100 bg-danger rounded-pill share">逛逛更多好物</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="col-md-1 coi-sm-0"></div>
+        
+    </div>
+    
+</div>
+
+<!-- Bootstrap CDN引用 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- js 引用 -->
+    <script src="./quiz.js"></script>
+</body>
+
+</html>

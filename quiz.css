@@ -1,0 +1,264 @@
+/* wrapper */
+html {
+    height: 100%;
+    padding-bottom: 5%;
+}
+
+body {
+    background-image: linear-gradient(to top, #fde492 0%, #fff1eb 15%, #ace0f9 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: cover;
+    font-family: "Microsoft JhengHei", Arial;
+}
+
+.quiz-progress {
+    /* width: 0; */
+    height: 5%;
+    position: fixed;
+    top: 95%;
+    left: 0;
+    background-color: #ddd23b;
+}
+
+.progress {
+    --bs-progress-bg: none;
+}
+
+/* start */
+.start-img {
+    width: 25%;
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    /* border: 1px solid #ff0000; */
+}
+
+.start-text {
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    text-align: center;
+    /* border: 1px solid #ff0000; */
+}
+
+.start-btn {
+    width: 200px;
+    height: 45px;
+    margin: 2%;
+    background-color: #fdd892;
+    border: none;
+    border-radius: 10px;
+}
+
+.start-btn:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #ffbd67;
+    border: whitesmoke;
+}
+
+/* content */
+.question {
+    width: 60%;
+    position: absolute;
+    top: 16%;
+    left: 20%;
+    text-align: center;
+    /* border: 1px solid #ff0000; */
+}
+
+.none {
+    display: none;
+}
+
+.question-out {
+    animation-name: fade-out-bck;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.question-in {
+    animation-name: fade-in-fwd;
+    animation-duration: 1s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    width: 50%;
+    padding: 8px 10px;
+    margin: 15px auto;
+    display: flex;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+label:hover {
+    background-color: #75b0fd;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* a:target {
+    animation-name: fade-out-bck;
+    animation-duration: 0.5s;
+} */
+
+.quiz-img1 {
+    width: 20%;
+    animation-name: shake-lr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.quiz-img2 {
+    width: 10%;
+    position:absolute;
+    top: 14%;
+    left: 45%;
+    z-index: 2;
+    animation-name: wobble-ver-right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.quiz-img3 {
+    width: 15%;
+    animation-name: jello-horizontal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.quiz-img4 {
+    width: 20%;
+    animation-name: bounce-top;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* result的mobile */
+/* result */
+.result-img {
+    width: 27%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.result-content {
+    width: 40%;
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    text-align: center;
+    /* border: 1px solid #ff0000; */
+}
+
+.result-text {
+    width: 100%;
+    padding: 15px 0;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+td:not(:first-child) {
+    width: 70%;
+}
+
+td:nth-child(1) {
+    justify-content: center;
+}
+
+.share {
+    padding: 5px;
+    border: 2px whitesmoke;
+    background-color: #fde492;
+    font-size: 18px;
+}
+
+.share:hover {
+    background-color: #75b0fd;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.result-carousel {
+    position: relative;
+    left: 13%;
+}
+
+.result-none {
+    transform: scale(0);
+    transition: .1s;
+}
+
+.result-in {
+    animation-name: fade-in-fwd;
+    animation-duration: 3s;
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+    .mobile-start-img {
+        width: 100%;
+        top: 18%;
+        left: 0;
+    }
+
+    .mobile-start-text {
+        width: 100%;
+        padding: 0 20px 80px;
+        top: 80%;
+        left: 0;
+    }
+
+    .mobile-question {
+        width: 100%;
+        left: 0;
+        /* border: 1px solid #ff0000; */
+    }
+
+    .mobile-quiz-img {
+        width: 40%;
+    }
+
+    .mobile-quiz-img2 {
+        width: 20%;
+        left: 42%;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    .mobile-label {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .mobile-result-img {
+        width: 60%;
+        top: 7%;
+        left: 20%;
+    }
+    
+    .mobile-result-content {
+        width: 90%;
+        top: 45%;
+        left: 5%;
+    }
+
+}
+
