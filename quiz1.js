@@ -7,7 +7,7 @@ function begin() {
 }
 
 function quiz1(e) {
-    if (e.target.nodeName !== "INPUT") { return; }
+    if (e.target.nodeName !== "INPUT") return; 
     
     document.getElementById('Q1').classList.remove('question-in');
     document.getElementById('Q1').classList.add('question-out');
@@ -17,7 +17,7 @@ function quiz1(e) {
 }
 
 function quiz2(e) {
-    if (e.target.nodeName !== "INPUT") { return; }
+    if (e.target.nodeName !== "INPUT") return;
     
     document.getElementById('Q2').classList.remove('question-in');
     document.getElementById('Q2').classList.add('question-out');
@@ -28,7 +28,7 @@ function quiz2(e) {
 }
 
 function quiz3(e) {
-    if (e.target.nodeName !== "INPUT") { return; }
+    if (e.target.nodeName !== "INPUT") return;
     
     document.getElementById('Q3').classList.remove('question-in');
     document.getElementById('Q3').classList.add('question-out');
@@ -39,7 +39,7 @@ function quiz3(e) {
 }
 
 function quiz4(e) {
-    if (e.target.nodeName !== "INPUT") { return; }
+    if (e.target.nodeName !== "INPUT") return;
     
     document.getElementById('Q4').classList.remove('question-in');
     document.getElementById('Q4').classList.add('question-out');
@@ -50,7 +50,7 @@ function quiz4(e) {
 }
 
 function result(e) {
-    if (e.target.nodeName !== "INPUT") { return; }
+    if (e.target.nodeName !== "INPUT")  return;
     
     document.getElementById('Q5').classList.remove('question-in');
     document.getElementById('Q5').classList.add('question-out');
@@ -64,24 +64,20 @@ function result(e) {
     // console.log(question);
     for(var i = 0; i < question.length; i++) {
         if(question[i].checked) {
-            temp = question[i].value;
-        //  console.log(temp);
+            temp = parseInt(question[i].value);
             item.push(temp);
-            console.log(item);
-            total += parseInt(temp);
-                    
+            total = item.reduce(( a, b ) => a + b, 0);
         }
     }
-    console.log(total);
 
     if ( total < 9) {
         document.getElementById('result1').classList.remove('result-none');
     }
     
-    else if ( total > 9 && total < 12) {
+    else if ( 12 >= total >= 10 ) {
         document.getElementById('result2').classList.remove('result-none');
     }
-
+    
     else {    
         document.getElementById('result3').classList.remove('result-none');
     }
