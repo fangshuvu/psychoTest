@@ -20,7 +20,7 @@
 <body>
 <div class="main">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="JavaScript:window.location.reload()">
                 <img src="./W5_img/stuff/rabbit-icon.png" alt="rabbit-icon" width="60" height="48">
@@ -63,9 +63,9 @@
     <!-- content -->
     <!-- start -->
     <div class="main-content" id="start">
-        <img class="start-img mobile-start-img" src="./W5_img/stuff/rabbit.png" alt="開始首圖">
+        <img class="start-img start-img" src="./W5_img/stuff/rabbit.png" alt="開始首圖">
 
-        <div class="start-text mobile-start-text">
+        <div class="start-text">
             <h2>「 哪種學習方式最適合你 ？」</h2>
             <p class="fs-5 text-black-50">\ 快來尋找屬於自己的學習好物吧 ! /</p>
             <p>
@@ -77,93 +77,96 @@
     </div>
 
     <!-- quiz -->
-    <div id="Q1" class="question mobile-question none">
-        <img class="m-3 quiz-img1 mobile-quiz-img" src="./W5_img/quiz/Q1.png" alt="想去的新地方">
+    <div id="Q1" class="question none">
+        <img class="m-3 quiz-img1 quiz-img" src="./W5_img/quiz/Q1.png" alt="想去的新地方">
 
         <h4 class="mb-4 fw-bolder">Q1. 到新地方的時候，你怎麼找到想去的地方？</h4>
 
         <div id="Answer1">
             <input id="A1-1" type="radio" name="A1" value="1">
-            <label class="mobile-label" for="A1-1">查詢地圖或指南上的資訊</label>
+            <label class="label" for="A1-1">查詢地圖或指南上的資訊</label>
             <input id="A1-2" type="radio" name="A1" value="2">
-            <label class="mobile-label" for="A1-2">出外靠朋友，問問路人吧</label>
+            <label class="label" for="A1-2">出外靠朋友，問問路人吧</label>
             <input id="A1-3" type="radio" name="A1" value="3">
-            <label class="mobile-label" for="A1-3">四處晃晃，船到橋頭自然直</label>
+            <label class="label" for="A1-3">四處晃晃，船到橋頭自然直</label>
         </div>
         
     </div>
     
-    <div id="Q2" class="question mobile-question none">
-        <img class="m-3 mobile-quiz-img" src="./W5_img/quiz/Q2.png" alt="閃亮">
-        <img class="quiz-img2 mobile-quiz-img2" src="./W5_img/quiz/Q2-1.png" alt="新東西">
-        
+    <div id="Q2" class="question none">
+        <div>
+            <img class="quiz-img" src="./W5_img/quiz/Q2.png" alt="閃亮">
+            <img class="quiz-img2" src="./W5_img/quiz/Q2-1.png" alt="新東西">
+        </div>
+
         <h4 class="mb-4 fw-bolder">Q2.使用新東西（例如手機、電器、遊戲）你習慣如何熟悉它？</h4>
         
         <div id="Answer2">
             <input id="A2-1" type="radio" name="A2" value="1">
-            <label class="mobile-label" for="A2-1">閱讀說明書</label>
+            <label class="label" for="A2-1">閱讀說明書</label>
             <input id="A2-2" type="radio" name="A2" value="2">
-            <label class="mobile-label" for="A2-2">向他人詢問如何操作</label>
+            <label class="label" for="A2-2">向他人詢問如何操作</label>
             <input id="A2-3" type="radio" name="A2" value="3">
-            <label class="mobile-label" for="A2-3">自己摸索，並在錯誤中學習</label>
+            <label class="label" for="A2-3">自己摸索，並在錯誤中學習</label>
         </div>
         
     </div>
     
-    <div id="Q3" class="question mobile-question none">
-        <img class="m-3 quiz-img1 mobile-quiz-img" src="./W5_img/quiz/Q3.png" alt="結交新朋友">
+    <div id="Q3" class="question none">
+        <img class="m-3 quiz-img1 quiz-img" src="./W5_img/quiz/Q3.png" alt="結交新朋友">
         
         <h4 class="mb-4 fw-bolder">Q3. 關於新認識的朋友，你比較記得他們的什麼？</h4>
         
         <div id="Answer3">
             <input id="A3-1" type="radio" name="A3" value="1">
-            <label class="mobile-label" for="A3-1">臉</label>
+            <label class="label" for="A3-1">臉</label>
             <input id="A3-2" type="radio" name="A3" value="2">
-            <label class="mobile-label" for="A3-2">名字</label>
+            <label class="label" for="A3-2">名字</label>
             <input id="A3-3" type="radio" name="A3" value="3">
-            <label class="mobile-label" for="A3-3">對話的內容</label>
+            <label class="label" for="A3-3">對話的內容</label>
         </div>
         
     </div>
     
-    <div id="Q4" class="question mobile-question none">
-        <img class="m-3 quiz-img3 mobile-quiz-img" src="./W5_img/quiz/Q4.png" alt="記憶電話號碼">
+    <div id="Q4" class="question none">
+        <img class="m-3 quiz-img3" src="./W5_img/quiz/Q4.png" alt="記憶電話號碼">
         
         <h4 class="mb-4 fw-bolder">Q4. 臨時要記一組電話號碼，你會怎麼做？</h4>
         
         <div id="Answer4">
             <input id="A4-1" type="radio" name="A4" value="1">
-            <label class="mobile-label" for="A4-1">假裝撥打，輸入電話鍵盤記憶</label>
+            <label class="label" for="A4-1">假裝撥打，輸入電話鍵盤記憶</label>
             <input id="A4-2" type="radio" name="A4" value="2">
-            <label class="mobile-label" for="A4-2">嘴裡反覆複誦</label>
+            <label class="label" for="A4-2">嘴裡反覆複誦</label>
             <input id="A4-3" type="radio" name="A4" value="3">
-            <label class="mobile-label" for="A4-3">筆記 或 存在手機裡</label>
+            <label class="label" for="A4-3">筆記 或 存在手機裡</label>
         </div>
         
     </div>
     
-    <div id="Q5" class="question mobile-question none">
-        <img class="m-3 quiz-img4 mobile-quiz-img" src="./W5_img/quiz/Q5.png" alt="書的偏好">
+    <div id="Q5" class="question none">
+        <img class="m-3 quiz-img4 quiz-img" src="./W5_img/quiz/Q5.png" alt="書的偏好">
         
         <h4 class="mb-4 fw-bolder">Q5. 閱讀什麼類型的書會讓你覺得有趣？</h4>
         
         <div id="Answer5">
             <input id="A5-1" type="radio" name="A5" value="1">
-            <label class="mobile-label" for="A5-1">大量圖片、表格的書</label>
+            <label class="label" for="A5-1">大量圖片、表格的書</label>
             <input id="A5-2" type="radio" name="A5" value="2">
-            <label class="mobile-label" for="A5-2">有很多字的書</label>
+            <label class="label" for="A5-2">有很多字的書</label>
             <input id="A5-3" type="radio" name="A5" value="3">
-            <label class="mobile-label" for="A5-3">有猜謎遊戲或附加小遊戲的書</label>
+            <label class="label" for="A5-3">有猜謎遊戲或附加小遊戲的書</label>
         </div>
         
     </div>
     
     <!-- result -->
-    <div id="result1" class="result-none">
-        <img class="result-img mobile-result-img" src="./W5_img/stuff/eye.png" alt="結果-視覺">
-        
-        <div class="result-content mobile-result-content">
-            <div class="mb-3 result-text">
+    <div id="result1" class="main-content result result-none sm-mt">
+        <div class="img-cotainer">
+            <img class="result-img" src="./W5_img/stuff/eye.png" alt="結果-視覺">
+        </div>
+        <div class="result-content">
+            <div class="result-text">
                 <h3 >視覺學習者</h3>
                 
                 <p class="m-3">
@@ -182,13 +185,13 @@
                     <!-- 左-輪播圖 -->
                     <td colspan="2" rowspan="4">
                         <div id="apple1" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide result-carousel">
-                            <div class="w-50 carousel-indicators">
+                            <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#apple1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#apple1" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#apple1" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             
-                            <div class="carousel-inner" style="width: 85%;">
+                            <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="img-fluid" src="./W5_img/stuff/eye-1.png">
                                 </div>
@@ -241,11 +244,12 @@
         
     </div>
     
-    <div id="result2" class="result-none">
-        <img class="result-img mobile-result-img" src="./W5_img/stuff/ear.png" alt="結果-聽覺">
-        
-        <div class="result-content mobile-result-content">
-            <div class="mb-3 result-text">
+    <div id="result2" class="main-content result result-none sm-mt">
+        <div class="img-cotainer">
+            <img class="result-img" src="./W5_img/stuff/ear.png" alt="結果-聽覺">
+        </div>
+        <div class="result-content">
+            <div class="result-text">
                 <h3 >聽覺學習者</h3>
                 
                 <p class="m-3">
@@ -264,7 +268,7 @@
                     <!-- 左-輪播圖 -->
                     <td colspan="2" rowspan="4">
                         <div id="apple2" data-bs-interval="3000" data-bs-ride="carousel" class="carousel slide result-carousel">
-                            <div class="w-50 carousel-indicators">
+                            <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#apple2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#apple2" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#apple2" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -323,11 +327,12 @@
         
     </div>
     
-    <div id="result3" class="result-none">
-        <img class="result-img mobile-result-img" src="./W5_img/stuff/tounch.png" alt="結果-觸覺">
-        
-        <div class="result-content mobile-result-content">
-            <div class="mb-3 result-text">
+    <div id="result3" class="main-content result result-none sm-mt">
+        <div class="img-cotainer">
+            <img class="result-img" src="./W5_img/stuff/tounch.png" alt="結果-觸覺">
+        </div>
+        <div class="result-content">
+            <div class="result-text">
                 <h3 >觸覺（操作型）學習者</h3>
                 
                 <p class="m-3">
@@ -352,7 +357,7 @@
                                 <button type="button" data-bs-target="#apple3" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             
-                            <div class="carousel-inner" style="width: 85%;">
+                            <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="img-fluid" src="./W5_img/stuff/tounch-1.png">
                                 </div>
